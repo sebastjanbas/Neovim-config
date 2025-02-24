@@ -9,4 +9,10 @@ vim.cmd("set shiftwidth=2")
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-print("hello from the sebastjan bas")
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+
+-- Navigate vim panes better
+-- vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
+-- vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
+-- vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
+-- vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
