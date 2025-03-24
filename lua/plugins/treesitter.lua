@@ -11,11 +11,10 @@ return {
 		config = function()
 			local config = require("nvim-treesitter.configs")
 			config.setup({
-				ensure_installed = { "html", "javascript", "typescript", "tsx" },
+				ensure_installed = { "html", "javascript", "typescript", "tsx", "markdown", "cpp", "css", "json" },
 				auto_install = true,
 				highlight = { enable = true },
 				indent = { enable = true },
-				autotag = { enable = true },
 			})
 		end,
 	},

@@ -13,7 +13,11 @@ return {
 				sources = {
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.prettier,
-					require("none-ls.diagnostics.eslint_d"),
+					require("none-ls.diagnostics.eslint_d").with({
+						filetypes = { "javascript", "javascriptreact", "jsx", "typescript", "typescriptreact" },
+					}),
+					null_ls.builtins.formatting.clang_format,
+					null_ls.builtins.formatting.biome,
 				},
 			})
 			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})

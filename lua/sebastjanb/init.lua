@@ -9,7 +9,7 @@ vim.cmd("set shiftwidth=2")
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+vim.opt.clipboard = "unnamedplus"
 
 -- Navigate vim panes better
 -- vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
