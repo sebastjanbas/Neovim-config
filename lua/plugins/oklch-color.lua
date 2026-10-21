@@ -11,5 +11,9 @@ return {
     },
   },
   ---@type oklch.Opts
-  opts = {},
+  opts = {
+    -- highlight = {
+    --   style = "virtual_left",
+    -- }
+  },
 }
